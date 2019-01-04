@@ -1,0 +1,23 @@
+Assignment-4_Session-2
+
+Problem Statement
+
+1. x <- c(“data.science.in.R”, “machine.learning.in.R”)
+Perform the below string Operation:
+* Replace the period character “.” Within the string with another character i.e. “-“minus sign.
+
+Answer-
+x <- c(“data.science.in.R”, “machine.learning.in.R”)
+y<- gsub("[.]", "-", x)
+
+2. x <- c(‘data.science.in.R’, ‘machine.learning.in.R’)
+Perform the below string Operation:
+* Append again with “-“minus sign character at the start of the each string and finally concatenate all the 
+string within the vector to form a final single string and assigning it the object.
+
+Answer-
+x <- c("data.science.in.R", "machine.learning.in.R")
+y <- gsub("[.]", "-", x)
+a <- paste0("-", y)
+z <- paste(a, collapse = "")
+print(z)
